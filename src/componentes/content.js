@@ -10,8 +10,8 @@ function Content() {
           <img src={require("../img/Genshin-Impact-Logo.jpg")} alt="logo" />
         </div>
         <div className="btn-header">
-          <a className="btna">About </a>
-          <a className="btna">Tokenomics</a>
+          <a href="" className="btna">About </a>
+          <a href="" className="btna">Tokenomics</a>
           <a href="" className="btna">Follow Us</a>
         </div>
       </header>
