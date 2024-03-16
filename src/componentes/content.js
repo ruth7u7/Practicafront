@@ -28,7 +28,7 @@ function Content() {
           <div className="social-container">
             <div className="btn-container">
               <button className="btn1">Telegram</button>
-              <button href='https://twitter.com/genshinimpactes?lang=es' className="btn2">Twitter</button>
+              <button onClick={() => window.location.href = 'https://twitter.com/genshinimpactes?lang=es'} class="btn2">Twitter</button>
             </div>
           </div>
         </div>
