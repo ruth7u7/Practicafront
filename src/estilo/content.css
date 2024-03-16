@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+.header-logo{ 
+  background-color: white; 
+  padding: 10px; 
+  box-shadow: whitesmoke;
+} 
+
+.header-logo img { 
+  width: 190px; 
+  height: 90px; 
+  margin-left: 25px; 
+  background-color: transparent;
+} 
+
+.container-present { 
+  padding-top: 25px; 
+  padding: 10px;
+  display: flex;  
+  flex-wrap: wrap; 
+  width:100%; 
+  height: 100vh;
+  align-items: center; 
+  background-color: hsl(197, 73%, 71%);
+} 
+
+.text-container { 
+  flex-basis: 60%;
+   /* increase the width to 60% */ 
+  display: flex; 
+} 
+
+.paimon-container { 
+  align-content:flex-start; 
+} 
+
+.social-container { 
+  margin-top: 10px; 
+  display: flex; 
+  align-items: center; /* center vertically */
+} 
+
+.text { 
+  font-size: 70px;
+  font-family: "Poller One", serif;
+  margin-bottom: 10px; 
+  margin-left: 40px;
+  padding-left: 35%; 
+  padding-bottom: 40%; 
+  transform: translateX(-10%) rotate(-10deg);
+}
+
+.btn-container { 
+ /* change to vertical direction */ 
+/* center vertically */ 
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: -295px;
+  padding-bottom: 150px;
+} 
+
+.btna {
+  font-size: 30px;
+  font-family: "Poller One", serif; 
+  color: #B7890b;
+  background-color: black;
+  border: 5px solid #B7890b;
+  border-radius: 30px;
+  /* box-shadow: #B7890b; */
+  padding: 10px 30px 10px;
+  margin: 9px;
+  cursor:pointer;
+  box-shadow: 0px 4px 8px rgba(183, 137, 11, 0.2);
+}
+
+.btn1, .btn2 { 
+  font-size: 34px;
+  margin-bottom: 5px; 
+  width: 330px;
+  height: 100px;
+  border: 5px solid #B7890b;
+  border-radius: 30px;
+  background-color: black;
+  color: #B7890b;
+  position: absolute;
+  transform: translateX(-50%);
+  cursor:pointer;
+  box-shadow: 0px 4px 8px rgba(183, 137, 11, 2);
+} 
+
+.btn1:hover{
+  background-color:rgba(0, 0, 0,.8)
+}
+.btn2:hover{
+  background-color:rgba(0, 0, 0,.8)
+}
+.btna:hover{
+  background-color:rgba(0, 0, 0,.8)
+}
+
+.btn1 {
+  top: 0;
+  transform: translateX(-50%) rotate(-20deg);
+}
+.btn2 {
+  bottom: 0;
+  transform: translateX(-50%) rotate(20deg);
+}
