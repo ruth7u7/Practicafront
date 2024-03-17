@@ -5,25 +5,28 @@ import "../estilo/content.css";
 function Content() {
   return (
     <body>
-      <header className="header-logo flex justify-content-between align-items-center">
-        <div>
+      <header className="header-logo grid-header">
+        <div className="cmp1">
           <img src={require("../img/Genshin-Impact-Logo.jpg")} alt="logo" />
         </div>
-        <div className="btn-header">
-          <a href="/" className="btna">About </a>
-          <a href="/" className="btna">Tokenomics</a>
-          <a href="/" className="btna">Follow Us</a>
+        <div className="cmp2 btn-header grid-btn">
+          <a href="/" className="cmp1 btna">About </a>
+          <a href="/" className="cmp2 btna">Tokenomics</a>
+          <a href="/" className="cmp3 btna">Follow Us</a>
         </div>
       </header>
-      <div className="container-present">
-        <div>
-          <img
+      <div className="container-present grid-orden">
+        <div className="cmp1 container-img">
+          <div className="img-content"> 
+
+          </div>
+          {/* <img
             className="paimon-present"
             src={require("../img/Arte_de_personaje_Paimon.png")}
             alt="img-paimon"
-          />
+          /> */}
         </div>
-        <div className="text-container">
+        <div className="cmp2 text-container">
           <h1 className="text">Follow Us</h1>
           <div className="social-container">
             <div className="btn-container">
