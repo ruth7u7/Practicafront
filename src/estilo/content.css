@@ -2,6 +2,9 @@
 
 body {
   overflow:hidden;
+  background-image: url('../img/genshinfondo.png');
+  width: auto;
+  height: auto;
 }
 
 .header-logo{ 
@@ -23,7 +26,7 @@ body {
   grid-template-rows: 100%;
   grid-template-areas: "cmp1 cmp2 cmp3";
   align-items: center;
-    justify-items: center;
+  justify-items: center;
 }
 
 .cmp3{
@@ -39,10 +42,10 @@ body {
 
 .container-present { 
   padding-top: 25px; 
-  padding: 10px;
-  height: 89vh;
+  height: 100%;
+  width: 100%;
   align-items: center; 
-  background-color: hsl(197, 73%, 71%);
+  /* background-color: hsl(197, 73%, 71%); */
 } 
 
 .grid-orden{
@@ -79,14 +82,15 @@ text-decoration: none;}
 .text { 
   font-size: 70px;
   font-family: "Poller One", serif;
-  margin-bottom: 10px; 
-  margin-left: 40px;
+  margin-bottom: 50px; 
+  margin-left: -400px;
   padding-left: 35%; 
   padding-bottom: 40%; 
   transform: translateX(-10%) rotate(-10deg);
 }
 
 .img-content{
+    animation: wiggle 5s linear infinite;
     width: 100%;
     height: 100%;
     min-width: 600px;
@@ -94,6 +98,31 @@ text-decoration: none;}
     background-image: url("../img/Arte_de_personaje_Paimon.png");
     background-size: 100% 100%;
 }
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
 
 .btn-container { 
   position: relative;
@@ -109,9 +138,9 @@ text-decoration: none;}
   height: min-content;
   font-size: 30px;
   font-family: "Poller One", serif; 
-  color: #B7890b;
-  background-color: black;
-  border: 5px solid #B7890b;
+  color: black;
+  background-color: #B7890b;
+  border: 9px solid white;
   border-radius: 30px;
   /* box-shadow: #B7890b; */
   padding: 10px 30px 10px;
@@ -121,35 +150,35 @@ text-decoration: none;}
 }
 
 .btn1, .btn2 { 
+  font-family: "Poller One", serif;
   font-size: 34px;
   margin-bottom: 5px; 
   width: 330px;
   height: 100px;
-  border: 5px solid #B7890b;
+  border: 9px solid white;
   border-radius: 30px;
-  background-color: black;
-  color: #B7890b;
+  background-color: #B7890b;
+  color: black ;
   position: absolute;
   transform: translateX(-50%);
   cursor:pointer;
-  box-shadow: 0px 4px 8px rgba(183, 137, 11, 2);
 } 
 
 .btn1:hover{
-  background-color:rgba(0, 0, 0,.8)
+  background-color:rgba(209, 166, 86, 0.8);
 }
 .btn2:hover{
-  background-color:rgba(0, 0, 0,.8)
+  background-color:rgba(209, 166, 86, 0.8);
 }
 .btna:hover{
-  background-color:rgba(0, 0, 0,.8)
+  background-color:rgba(209, 166, 86, 0.8)
 }
 
 .btn1 {
   top: 0;
-  transform: translateX(-50%) rotate(-20deg);
+  transform: translateX(-50%) rotate(-10deg);
 }
 .btn2 {
   bottom: 0;
-  transform: translateX(-50%) rotate(20deg);
+  transform: translateX(-50%) rotate(10deg);
 }
